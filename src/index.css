@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* text grdaent */
+
+/* Define the gradient text class */
+.text-gradient {
+  background: linear-gradient(to right, rgb(110, 100, 115), rgb(43, 9, 179));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradienttext {
+  background: linear-gradient(to right, rgb(110, 100, 115), rgb(43, 9, 179));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.item {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(5px);
+  background: linear-gradient(to right, #babafa, #9900cc);
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.hover-bg-blue-700:hover {
+  background-color: #007bff;
+}
+
+.hover-text-white:hover h1,
+.hover-text-white:hover p {
+  color: white;
+}
+
+.hover-text-white:hover .text-blue-800 {
+  color: white;
+}
+
+.w-550px {
+  width: 550px;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.text-blue-800 {
+  color: #0056b3;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+/* div image */
+.image {
+  background-image: url("/src/Assects/images/5075065.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s ease; 
+}
+
+
+
+.image1 {
+  background-image: url("/src/Assects/images/woman-sportswear-using-virtual-reality-goggles.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s ease; 
+}
+
+
+.image2 {
+  background-image: url("/src/Assects/images/man-with-futuristic-device-copy-space.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s ease; 
+}
+
+/* Rotets */
+
+.rotate-div {
+  transform: rotate(6deg); 
+}
+
+
+
+/* styles.css */
+.scroll-behavior-smooth {
+  scroll-behavior: smooth;
+}
+
+
+/* tostify */
+/* customToast.css */
+
+/* Define custom animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* Apply animation to the toast */
+.custom-toast {
+  animation: slideIn 0.5s ease-in-out, slideOut 0.5s ease-in-out 2.5s forwards;
+}
+
+/* totating */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
