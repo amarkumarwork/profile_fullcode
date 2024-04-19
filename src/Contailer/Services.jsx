@@ -45,7 +45,7 @@ const Services = () => {
           <div class="item flex flex-row py-10 px-10 gap-5 justify-center items-center hover:text-white hover:bg-gradient-to-r from-violet-500 to-violet-950 w-fit m-auto">
             <h4 class="text-2xl font-semibold">01</h4>
             <h1 class="text-5xl w-[550px] font-bold">
-              {getService.your[0].data_1[0].skills}
+              {/* {getService.your[0].data_1[0].skills} */}
             </h1>
             <p class="w-[550px]">
               I break down complex user experinece problems to create integritiy
